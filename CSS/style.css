@@ -1,0 +1,87 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #ff4500; 
+}
+
+#student-info {
+    font-size: 14px;
+    color: #f4c542;
+}
+
+/* Form styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input[type="text"], input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Center buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Added margin to match the pizza sections */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff4500; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px; 
+}
+
+button:hover {
+    background-color: #ffd700; 
+}
+
+/* Pizza section styles */
+.pizza-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pizza-list > div {
+    width: 30%; /* Adjust as needed */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Order confirmation message */
+#order-confirmation {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffd700; 
+    border: 1px solid #ff4500; 
+    border-radius: 5px;
+    color: #ff4500; 
+}

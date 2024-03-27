@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pizza Order Form</h1>
+        <p id="student-info">Student ID: 200549269 | Name: Rebacca Min</p>
+
+        <!-- Non-Vegetarian Pizzas -->
+        <div>
+            <h2>Non-Vegetarian Pizzas</h2>
+            <div class="pizza-list" id="non-veg-pizzas">
+                <!-- Non-vegetarian pizza options will be dynamically added here -->
+            </div>
+            <div id="non-veg-button-container"></div>
+        </div>
+
+        <!-- Vegetarian Pizzas -->
+        <div>
+            <h2>Vegetarian Pizzas</h2>
+            <div class="pizza-list" id="veg-pizzas">
+                <!-- Vegetarian pizza options will be dynamically added here -->
+            </div>
+            <div id="veg-button-container"></div>
+        </div>
+
+        <!-- Custom Pizzas -->
+        <div class="button-container">
+            <h3>Customize Your Pizza</h3>
+            <div class="pizza-list" id="custom-pizzas">
+                <!-- Custom pizza options will be dynamically added here -->
+            </div>
+            <button id="build-your-own-btn">Build</button>
+        </div>
+
+        <!-- Customization options -->
+        <div id="customization" style="display: none;">
+            <h2>Customize Your Pizza</h2>
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select><br><br>
+
+            <label for="toppings">Toppings:</label><br>
+            <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+            <label for="pepperoni">Pepperoni</label><br>
+            <input type="checkbox" id="sausage" name="toppings" value="Sausage">
+            <label for="sausage">Sausage</label><br>
+            <input type="checkbox" id="ham" name="toppings" value="Ham">
+            <label for="ham">Ham</label><br>
+
+            <!-- Additional veg toppings -->
+            <input type="checkbox" id="mushroom" name="toppings" value="Mushroom">
+            <label for="mushroom">Mushroom</label><br>
+            <input type="checkbox" id="spinach" name="toppings" value="Spinach">
+            <label for="spinach">Spinach</label><br>
+
+            <!-- Additional cheese toppings -->
+            <input type="checkbox" id="mozzarella" name="toppings" value="Mozzarella">
+            <label for="mozzarella">Mozzarella</label><br>
+            <input type="checkbox" id="cheddar" name="toppings" value="Cheddar">
+            <label for="cheddar">Cheddar</label><br>
+
+            <label for="crust">Crust Type:</label>
+            <select id="crust" name="crust">
+                <option value="thin">Thin Crust</option>
+                <option value="thick">Thick Crust</option>
+                <option value="stuffed">Stuffed Crust</option>
+            </select><br><br>
+
+            <label for="customer-name">Your Name:</label>
+            <input type="text" id="customer-name" name="customer-name" placeholder="Enter your name">
+        </div>
+
+        <!-- Order button -->
+        <button id="order-btn" style="display: none;">Order Pizza</button>
+
+        <!-- Order confirmation message -->
+        <div id="order-confirmation" style="display: none;">
+            <h2>Order Confirmation</h2>
+            <p id="confirmation-message"></p>
+        </div>
+    </div>
+    <script src="./JS/script.js" defer></script>
+</body>
+</html>
